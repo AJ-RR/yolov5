@@ -24,8 +24,7 @@ def detect(save_img=False):
     webcam = source.isnumeric() or source.startswith('rtsp') or source.startswith('http') or source.endswith('.txt')
 
     src_vid = cv2.VideoCapture(source)
-    num_frames = src_vid.get(cv2.CAP_PROP_FRAME_COUNT)
-
+    
     curr_frame = 0
 
     # Initialize
